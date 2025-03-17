@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Adoption Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #5eaf5e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .featured-animals {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .animal {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: white;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: #5eaf5e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Animal Adoption Center!</h1>
+        <p>Find your perfect furry friend today.</p>
+    </header>
+
+    <section>
+        <h2>Featured Animals</h2>
+        <div class="featured-animals">
+            <div class="animal">
+                <h3>Max</h3>
+                <p>Breed: Golden Retriever</p>
+                <p>Age: 2 years</p>
+                <p>Friendly and loves to play!</p>
+            </div>
+            <div class="animal">
+                <h3>Bella</h3>
+                <p>Breed: Siamese Cat</p>
+                <p>Age: 3 years</p>
+                <p>Affectionate and loves cuddles.</p>
+            </div>
+            <div class="animal">
+                <h3>Charlie</h3>
+                <p>Breed: Rabbit</p>
+                <p>Age: 1 year</p>
+                <p>Calm and enjoys gentle petting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>How to Adopt</h2>
+        <p>1. Choose an animal.</p>
+        <p>2. Fill out the adoption form.</p>
+        <p>3. Complete the adoption process at our center.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Animal Adoption Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
